@@ -56,11 +56,11 @@ features                                  :
     description                           : The app will automatically adjust to the preferred theme set on your Android 10+ or iOS 13+ device.
     fontawesome_icon_name                 : moon
 
-    - title                               : Always Free
+  - title                                 : Always Free
     description                           : WristCheck is supported by small, unobtrusive ads and the full feature set is always free!
     fontawesome_icon_name                 : lock-open
 
-    -  title                              : Pay what you like
+ -  title                                 : Pay what you like
     description                           : Want to remove ads? Pick the price of your one-off donation to support the apps development!
     fontawesome_icon_name                 : comment-dollar
 
