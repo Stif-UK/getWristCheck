@@ -42,7 +42,7 @@ features                                  :
 
   - title                                 : Track What You Wear
     description                           : Quickly track what's on your wrist and view charts to see what you wear most.
-    fontawesome_icon_name                 : chart
+    fontawesome_icon_name                 : signal
 
   - title                                 : Daily Reminder
     description                           : Receive a daily reminder to update the app with what's on your wrist.
@@ -55,6 +55,10 @@ features                                  :
   - title                                 : Light and Dark Themes
     description                           : The app will automatically adjust to the preferred theme set on your Android 10+ or iOS 13+ device.
     fontawesome_icon_name                 : moon
+
+  - title                                 : Always Free
+    description                           : WristCheck is supported by small, unobtrusive ads and the full feature set is always free!
+    fontawesome_icon_name                 : lock-open
 
   - title                                 : # New Feature Title
     description                           : # New Feature Description
