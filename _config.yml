@@ -42,19 +42,19 @@ features                                  :
 
   - title                                 : Track What You Wear
     description                           : Quickly track what's on your wrist and view charts to see what you wear most.
-    fontawesome_icon_name                 : chart-simple
+    fontawesome_icon_name                 : chart
 
   - title                                 : Daily Reminder
     description                           : Receive a daily reminder to update the app with what's on your wrist.
-    fontawesome_icon_name                 : clock-rotate-left
+    fontawesome_icon_name                 : calendar
 
   - title                                 : Quickly Search Your Collection
     description                           : Quickly find the watch you want in a big collection using the real time search feature.
-    fontawesome_icon_name                 : magnifying-glass
+    fontawesome_icon_name                 : search
 
   - title                                 : Light and Dark Themes
     description                           : The app will automatically adjust to the preferred theme set on your Android 10+ or iOS 13+ device.
-    fontawesome_icon_name                 : circle-half-stroke
+    fontawesome_icon_name                 : moon
 
   - title                                 : # New Feature Title
     description                           : # New Feature Description
