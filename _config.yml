@@ -23,10 +23,10 @@ enable_smart_app_banner                   : true                                
 your_name                                 : Grant Hutchison
 your_link                                 : https://granthutchison.com
 your_city                                 : Glasgow
-email_address                             : stifdev.uk@gmail.com
+email_address                             : feedback@wristcheck.app
 facebook_username                         :
-instagram_username                        :
-twitter_username                          :
+instagram_username                        : wristcheck.app
+twitter_username                          : wristcheckapp
 github_username                           : Stif-UK
 youtube_username                          :
 mastodon_link                             :
@@ -63,7 +63,7 @@ features                                  :
   - title                                 : Pay What You Like
     description                           : Want to remove ads? Pick the price of your one-off donation to support the apps development!
     fontawesome_icon_name                 : comment-dollar
-    
+
   - title                                 : # New Feature Title
     description                           : # New Feature Description
     fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
