@@ -10,6 +10,23 @@ Here you can view a changelog and version history for **WristCheck**. Got some s
 <br>
 
 ### `Latest`
+# **Version 1.6.1**
+In version 1.6 I have focused on improving the add/view/edit watch user interface, to (hopefully) make it more intuitive to use, and easier to find the details you want quickly!
+
+Additionally, this release includes new data points that you can save for each watch, including: category, movement type, and purchase and sale information (such as date, price and who the watch was bought from/sold to).
+
+Of course more data also means more analysis, so the app can now also provide a 'cost per wear' value for each watch, charts showing the movement types and watch categories that make up your collection as well as calculations of collection spend amongst others.
+
+#### What's New
+- UI overhaul of the add/view/edit watch pages
+- Capture more watch details such as category and movement types
+- Capture watch value data such as purchase and sale dates, prices and who the watch was purchased from/sold to
+- Additional information added to the collection stats section, including additional charts and data analysis
+
+#### Bug Fixes
+- The way database backup works has been changed to avoid a crash issue on iOS - now rather than the app attempting to write a copy of the database to a new location, it pushes a copy to the platforms 'share' function, allowing you to send the database copy wherever you like quickly (I'd recommend sending to iCloud/Google Drive or similar every so often!).
+
+<br>
 # **Version 1.5.1**
 In version 1.5 the main update is a change to the user interface of the main watch box view. The page now shows watch images (if you've added them!), adds various options to change the display order of the watches and lets you choose between the original list view, or a grid view with larger images.
 It also makes access to search more prominent and makes it easier to switch between your various 'watch boxes' (e.g. your wishlist or sold watches)
