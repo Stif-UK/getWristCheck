@@ -10,6 +10,37 @@ Here you can view a changelog and version history for **WristCheck**. Got some s
 <br>
 
 ### `Latest`
+# **Version 1.7.1**
+Another self-contained, _big_ release, and one that I'm really proud of! When I built **WristCheck** I initially wanted to be able to use data to really _understand_ my collection and how I interacted with that. The _Wear Charts_ were the first manifestation of this, however they were quite basic, only showing individual watches with counts which could be filtered by a combination of month and year...
+With version 1.7.1 though I've attempted to supercharge that! You can now see the charts over alternative time periods (such as last 30 or 90 days), have additional options to group the results (by watch, by manufacturer, by category or by movement type!) and you can filter the results to include or exclude sold and archived watches, or to only show specific movement types or watch categories!
+
+#### What's New
+- Update to Wear Chart screen to include new filter and grouping options.
+- Group charts by watch, manufacturer, category or movement type.
+- Filter chart by new time periods, by movement type or by category.
+- Include or exclude Sold and Archived watches from the reports.
+
+#### Bug Fixes
+- The new implementation of the Wear Charts will extend past the bottom of the screen and become scrollable if there are a lot of records returned. This fixes an old bug where if you had ~30 watches being displayed, the names of every second chart line disappeared.
+- In line with the above, the chart Screenshot functionality has been updated to automatically capture the full size of the chart and any current filter information when the button is pressed.
+
+<br>
+
+# **Version 1.6.4**
+This release includes a few small improvements and bug fixes which didn't feel like they warranted a large version bump. Behind the scenes updates include implementation of improved crash logging and analytics to help me to make the app _better,_ as well as a new pre-order status to provide a countdown to a watches target release/delivery date.
+
+#### What's New
+- Updated notification code to work with the latest versions of Android and iOS.
+- New Pre-Order status to allow a countdown to watch release.
+- Option added to do a bulk export of all watch images, making it easier to move to a new device.
+- Implemented Crashlytics logging and Firebase Analytics to help to quickly address performance issues and to better understand app usage to guide future updates.
+
+#### Bug Fixes
+- Fixed an old bug where the in-app version history wouldn't fully scroll to the bottom.
+- Slight adjustment to notification code to keep the notification at the scheduled time during daylight savings time changes.
+
+<br>
+
 # **Version 1.6.1**
 In version 1.6 I have focused on improving the add/view/edit watch user interface, to (hopefully) make it more intuitive to use, and easier to find the details you want quickly!
 
