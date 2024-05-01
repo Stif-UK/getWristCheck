@@ -10,6 +10,21 @@ Here you can view a changelog and version history for **WristCheck**. Got some s
 <br>
 
 ### `Latest`
+# **Version 1.8.0**
+
+
+#### What's New
+- New Calendar view (replacing original Servicing schedule as a main tab), visualising all wear data.
+- Ability to see a list of all watches worn on a selected date, as well as other scheduled events such as service due dates.
+- Ability to add wear records directly to the calendar.
+- New warranty expiry date field added to the Watch model.
+- Updated Schedule view, allowing a user to view a chronological service due schedule or a warranty expiry schedule.
+- Website link (www.wristcheck.app) added to the About App info, along with some smaller cosmetic updates here.
+
+#### Bug Fixes
+- Updated the calculation algorithm for the 'cost per wear' value - this now takes into account any returned value when a watch is sold.
+
+<br>
 # **Version 1.7.1**
 Another self-contained, _big_ release, and one that I'm really proud of! When I built **WristCheck** I initially wanted to be able to use data to really _understand_ my collection and how I interacted with that. The _Wear Charts_ were the first manifestation of this, however they were quite basic, only showing individual watches with counts which could be filtered by a combination of month and year...
 With version 1.7.1 though I've attempted to supercharge that! You can now see the charts over alternative time periods (such as last 30 or 90 days), have additional options to group the results (by watch, by manufacturer, by category or by movement type!) and you can filter the results to include or exclude sold and archived watches, or to only show specific movement types or watch categories!
