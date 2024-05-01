@@ -11,7 +11,15 @@ Here you can view a changelog and version history for **WristCheck**. Got some s
 
 ### `Latest`
 # **Version 1.8.0**
+When I first built WristCheck I was relatively new to watch collecting, having recently purchased my first mechanical watch... I was also clearly quite naive as I thought a schedule of when services were due would be a headline feature of the app! Instead, I got quite a bit of feedback that, whilst it's useful to know when servicing is due per manufacturers suggestions, many owners only get their watches serviced at the point where they notice a drop in accuracy.
+I've also never been happy with the lack of visualisation of how your wear tracking is going, which was visible as a big list of dates per watch... so this fix hopefully addresses this with the addition of a new **Calendar View**.
+From the main landing page, this replaces the third page tab, and populates a calendar quickly highlighting each day where a watch wear has been recorded, as well as showing upcoming service due dates (if tracked) and **warranty expiry dates.**
+Speaking of which - you can now also add a warranty expiry date to your watches!
 
+But what about the old servicing view? It wasn't useless, but definitely was a _secondary feature_ (i.e. not necessarily a primary use case for most) of the app and therefore rather than getting rid of it, I've simply moved it to a more appropriate place.
+On the calendar view there's a small circular button that changes from a month/day calendar view to the old servicing view, however it's now been tidied up and includes tabs along the top to switch between a service schedule and a warranty end schedule.
+
+With this release I think I'm now happy with the primary features of the app, so going forward the next few updates will all be about just making things _better_. As always, if you have any feedback please feel free to drop an email to [feedback@wristcheck.app](mailto:feedback@wristcheck.app) or write an app review on your favourite app store - user input genuinely does help me continue to improve the app!
 
 #### What's New
 - New Calendar view (replacing original Servicing schedule as a main tab), visualising all wear data.
