@@ -10,6 +10,31 @@ Here you can view a changelog and version history for **WristCheck**. Got some s
 <br>
 
 ### `Latest`
+# **Version 1.9.0**
+A relatively big update this time, with some nice new additions and the first 'WristCheck Pro' feature drops - to date all functionality has been free to everyone, and it's important to me that the app provides value to everyone (I didn't set out to make money, I set out to make an app for fellow watch nerds!) but I think the app has now reached the point where it's got a really solid set of core features (watch data tracking, wear tracking and charts, a visual representation of what you've worn via the calendar etc) so felt it was time to add a few wee extras for the extra nerdy amongst us!
+
+But first up, I wanted to include some more features that improve the app experience for everyone...
+
+First, the app logo has been added to the sidebar - I know this is a really minor update, but I think it really improves the whole sidebar! This goes hand in hand with some slight adjustments to add a new 'App Data' menu item, to bring together the existing Backup/Restore features and the new **CSV Extracts** option.
+
+This allows you to export your data in two forms, either a simple list of each watch with all their data and a consolidated wear count (useful if you need a quick list for insurance purposes perhaps?) or a second more complex option, that has one line for every recorded wear (so multiple lines per watch) - perfect if you want to do your own data analysis!
+
+Next up, I've also replaced the old date-list view with a calendar view, showing wear dates, servicing and warranty dates on a per-watch basis. From here you can quickly review, add and delete wear records for the chosen watch.
+
+So, onto those 'WristCheck Pro' features - as mentioned, I don't do this to make money (I'm _not even close_ to the point I could claim to earn minimum wage from my wee apps!), but I did want to start adding some little extras for supporters, and wanted to focus on exactly that - **extras** - fun wee additions that just add a bit more value for the _real nerds_ among us!
+
+First up - and something I've had a few requests for - the ability to set a second daily reminder. Quite a few people wear a work watch and then swap over in the evening, so now they can get reminded to log into the app twice a day to track what they're wearing.
+
+Then, last but by no means least, I've added some per-watch graphs (currently accessed via a link from the watch page, but I'll add something to the 'stats' page in the next drop) - initially two options are available - a breakdown of wears by month, and another of wears by weekday. Not going to lie, I _love_ wee graphs so this is my favourite addition and works well! I'm planning to further refine these in future releases and will probably add more - as always please feel free to drop me a note with any ideas or suggestions.
+
+#### What's New
+- The WristCheck logo has been added in the sidebar menu, along with a slight menu re-design.
+- The Calendar view is now extended to give calendar breakdowns for individual watches - quickly review, add or delete wear dates.
+- CSV data extracts - generate simple (one line per watch) or complex (one line per wear record) CSV extracts, to quickly summarise your collection or to draw your own charts!
+- (Pro) WristCheck Pro users can now set a second daily reminder.
+- (Pro) New watch data charts are available to Pro users, showing a breakdown of wearing habits for individual watches, by weekday or by month.
+
+<br>
 # **Version 1.8.0**
 When I first built WristCheck I was relatively new to watch collecting, having recently purchased my first mechanical watch... I was also clearly quite naive as I thought a schedule of when services were due would be a headline feature of the app! Instead, I got quite a bit of feedback that, whilst it's useful to know when servicing is due per manufacturers suggestions, many owners only get their watches serviced at the point where they notice a drop in accuracy.
 I've also never been happy with the lack of visualisation of how your wear tracking is going, which was visible as a big list of dates per watch... so this fix hopefully addresses this with the addition of a new **Calendar View**.

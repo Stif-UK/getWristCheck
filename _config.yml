@@ -57,11 +57,11 @@ features                                  :
     fontawesome_icon_name                 : moon
 
   - title                                 : Always Free
-    description                           : WristCheck is supported by small, unobtrusive ads and the full feature set is always free!
+    description                           : WristCheck is supported by small, unobtrusive ads and the core feature set is always free!
     fontawesome_icon_name                 : lock-open
 
   - title                                 : Pay What You Like
-    description                           : Want to remove ads? Pick the price of your one-off donation to support the apps development!
+    description                           : Want to remove ads? Pick the price of your one-off donation to support the apps development and unlock some extras for the real watch nerds!
     fontawesome_icon_name                 : comment-dollar
 
   - title                                 : # New Feature Title
