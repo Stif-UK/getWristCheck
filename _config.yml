@@ -23,9 +23,9 @@ enable_smart_app_banner                   : true                                
 your_name                                 : Grant Hutchison
 your_link                                 : https://granthutchison.com
 your_city                                 : Glasgow
-email_address                             : feedback@wristcheck.app
+email_address                             : feedback@wristtrack.app
 facebook_username                         :
-instagram_username                        : wristcheck.app
+instagram_username                        : wristtrack.app
 twitter_username                          : wristcheckapp
 github_username                           : Stif-UK
 youtube_username                          :
@@ -57,7 +57,7 @@ features                                  :
     fontawesome_icon_name                 : moon
 
   - title                                 : Always Free
-    description                           : WristCheck is supported by small, unobtrusive ads and the core feature set is always free!
+    description                           : WristTrack is supported by small, unobtrusive ads and the core feature set is always free!
     fontawesome_icon_name                 : lock-open
 
   - title                                 : Pay What You Like
