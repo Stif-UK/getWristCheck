@@ -11,14 +11,14 @@ Here you can view a changelog and version history for **WristTrack**. Got some s
 
 ### `Latest`
 # **Version 1.9.1**
-A super quick, but important update - version 1.9.1 updates the app name from *WristCheck* to *WristTrack*.
+A super quick, but important update - version 1.9.1 updates the app name from *WristCheck* to **WristTrack**.
 
 When I set up the app I naively didn't think to check if the name was already being used elsewhere, so was surprised to find _WristCheck_ is a registered trademark - full credit to the team at [WristCheck.com](https://www.wristcheck.com) (the holders of the trademark) though, they were excellent about it and I was able to get an update together for the app within around a week.
 
-I'm sure I've missed a reference or two to 'WristCheck' within the app, but I'll get those tidied up in the next release (which is just around the corner!) - for now though, I hope you all enjoy *WristTrack* as much as you did when it had it's old name!
+I'm sure I've missed a reference or two to 'WristCheck' within the app, but I'll get those tidied up in the next release (which is just around the corner!) - for now though, I hope you all enjoy **WristTrack** as much as you did when it had it's old name!
 
 #### What's New
-- An app rename (along with associated update to this website!) from _WristCheck_ to _*WristTrack*_
+- An app rename (along with associated update to this website!) from _WristCheck_ to _**WristTrack**_
 
 <br>
 # **Version 1.9.0**
