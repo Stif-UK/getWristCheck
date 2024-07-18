@@ -4,12 +4,34 @@ title: What's New
 include_in_header: true
 ---
 
-# Changelog
-Here you can view a changelog and version history for **WristTrack**. Got some suggestions for features you’d like to see in a future update? Please feel free to mention in an app review via Apple or Google, drop me an email or @ me on Twitter _(or whatever it's called this week)!_
+# Change log
+Here you can view a change log and version history for **WristTrack**. Got some suggestions for features you’d like to see in a future update? Please feel free to mention in an app review via Apple or Google, drop me an email or @ me on Twitter _(or whatever it's called this week)!_
 
 <br>
 
 ### `Latest`
+# **Version 1.10.0**
+I had planned a larger release for v1.10, since its the 10th major release of the app (time flies!), but I also got a new laptop recently which meant migrating all the parts of my dev setup that aren't backed up in Github (such as API and signing keys), so decided to focus on one main feature that I've wanted to add for a while and make available to everyone - a new network synchronised clock!
+
+There's now a new tab on the main page labelled 'time' which opens up a clock displaying the current time - it starts of based on the device system time, but quickly gets responses from network time servers (and will continue to improve accuracy as more servers respond) to show the most accurate time possible. I've also implemented an optional audible countdown of the last few seconds each minute (with a larger 'chime' when the clock hits "00") to help accurate time setting. (As an aside, I find it a little amusing that despite mechanical watches often only being accurate to a few seconds a day, I still *really want* to make sure they're accurate when I set them!)
+
+When I added the calendar view in v1.8 I was also asked if I could provide an option to make it the main screen (as some users like to look at the calendar and quickly see if they've missed any dates), so with the addition of the time page I was happy to oblige, and there's now an 'app preferences' screen within Settings to allow selection of either the Collection, Calendar or Time screens as the app home screen.
+Whilst making this settings page I also included the option to amend the collection ordering and List / Grid setting here too (previously this was only available in the pop-up screen found on the collection view, but no harm in having these options in two places!).
+
+Finally, I made a few under the hood updates - Google notified me that I needed to update the app to target to the current Android version (ahead of the new version coming out) as well as to use the latest version of the Play Billing library (which for me is packaged as part of the RevenueCat SDK I utilise for in-app billing) - these changes need to be made once a year to keep up to date with the latest Android standards, so with these updates made I can look forward to doing the same again next summer (although similar updates for Apple are likely required later in the year!). Since I'm on a new laptop I also updated the Flutter SDK version and had to make some smaller updates to the app build scripts... all boring tech stuff!
+
+Oh, and I had a couple of references to WristCheck that I found and updated to WristTrack!
+
+So that's it for v1.10 - as always feedback is appreciated!
+
+#### What's New
+- New Time page - get the accurate time (with optional audible countdown) for setting your watches.
+- Home page selection - choose whether the app should open to your collection, calendar or clock.
+- Tidied up some leftover references to 'WristCheck'.
+- Under the hood updates to use the latest versions of the Flutter development SDK and RevenueCat libraries, as well as incrementing the Android SDK build target (the latter two changes are required to keep the app in line with Android policies).
+
+<br>
+
 # **Version 1.9.1**
 A super quick, but important update - version 1.9.1 updates the app name from *WristCheck* to **WristTrack**.
 
@@ -21,6 +43,7 @@ I'm sure I've missed a reference or two to 'WristCheck' within the app, but I'll
 - An app rename (along with associated update to this website!) from _WristCheck_ to _**WristTrack**_
 
 <br>
+
 # **Version 1.9.0**
 A relatively big update this time, with some nice new additions and the first 'WristCheck Pro' feature drops - to date all functionality has been free to everyone, and it's important to me that the app provides value to everyone (I didn't set out to make money, I set out to make an app for fellow watch nerds!) but I think the app has now reached the point where it's got a really solid set of core features (watch data tracking, wear tracking and charts, a visual representation of what you've worn via the calendar etc) so felt it was time to add a few wee extras for the extra nerdy amongst us!
 
@@ -46,6 +69,7 @@ Then, last but by no means least, I've added some per-watch graphs (currently ac
 - (Pro) New watch data charts are available to Pro users, showing a breakdown of wearing habits for individual watches, by weekday or by month.
 
 <br>
+
 # **Version 1.8.0**
 When I first built WristCheck I was relatively new to watch collecting, having recently purchased my first mechanical watch... I was also clearly quite naive as I thought a schedule of when services were due would be a headline feature of the app! Instead, I got quite a bit of feedback that, whilst it's useful to know when servicing is due per manufacturers suggestions, many owners only get their watches serviced at the point where they notice a drop in accuracy.
 I've also never been happy with the lack of visualisation of how your wear tracking is going, which was visible as a big list of dates per watch... so this fix hopefully addresses this with the addition of a new **Calendar View**.
@@ -69,6 +93,7 @@ With this release I think I'm now happy with the primary features of the app, so
 - Updated the calculation algorithm for the 'cost per wear' value - this now takes into account any returned value when a watch is sold.
 
 <br>
+
 # **Version 1.7.1**
 Another self-contained, _big_ release, and one that I'm really proud of! When I built **WristCheck** I initially wanted to be able to use data to really _understand_ my collection and how I interacted with that. The _Wear Charts_ were the first manifestation of this, however they were quite basic, only showing individual watches with counts which could be filtered by a combination of month and year...
 With version 1.7.1 though I've attempted to supercharge that! You can now see the charts over alternative time periods (such as last 30 or 90 days), have additional options to group the results (by watch, by manufacturer, by category or by movement type!) and you can filter the results to include or exclude sold and archived watches, or to only show specific movement types or watch categories!
