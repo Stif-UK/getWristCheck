@@ -5,11 +5,58 @@ include_in_header: true
 ---
 
 # Change log
-Here you can view a change log and version history for **WristTrack**. Got some suggestions for features you’d like to see in a future update? Please feel free to mention in an app review via Apple or Google, drop me an email or @ me on Twitter _(or whatever it's called this week)!_
+Here you can view a change log and version history for **WristTrack**. Got some suggestions for features you’d like to see in a future update? Please feel free to mention in an app review via Apple or Google, drop me an email or message me on Instagram!
 
 <br>
 
 ### `Latest`
+# **Version 1.12.1**
+I started this release with some good intentions - I really wanted to release a new feature, _Wrist Recap_, before the end of 2024, to act similar to _'Spotify Wrapped'_, giving users a summary of their collection and wearing habits over the course of the year... however the more I looked at it, the _bigger_ it got! Which was proving detrimental to getting it finished and moving onto other, long promised work... and past the point where it would arrive in 2024!
+
+Instead I got it to a point where the foundations were in place - it will let you pick a year from any with data, create some data sets based on this and structure the data for easy access and handle things like empty values... it only shows changes in collections size, overall wear count and the top three watches worn in a year though - but the _potential_ is there! So in this release it's got a _'BETA'_ tag on it as it's just a starting point for something more to come. I considered turning it off, but thought releasing it would gather more input and feedback (and if you have any, please reach out!)
+
+This let me then move onto something I've been promising for a while - _more data!_ I've limited this to Pro users, as a way of adding additional value to the Pro upgrade and started off with case dimensions (diameter, thickness, lug to lug and lug width). These can all now be added on the new 'Nerd' tab Pro users will see on the watch pages... and of course _more data_ means _more charts_, so within Collection Stats each data point has it's own chart summarising your collection, and within Wear Stats you can now group your wear stats by these (which case size do you wear most?).
+This builds on the foundations I laid out in v1.11, and is the start of a wider push to expand the data in the app. My intention is to add a few points in each release going forward.
+
+Next up, a couple of new currencies available as options (both requested by users, so please reach out if you'd like to see more) - Swiss Francs (CHF) and Hungarian Forint (HUF). It was nice to revisit this and see how simple I'd kept the code for currency, as adding these was super easy... thanks past me!
+
+Another pro only feature is the new Moon Phase calculator on the Time Setting tab - for non-pro users I show an ad at the bottom of this screen, but for Pro users there was lots of unused space, so filling it with a representation of the current moon phase made sense, and is hopefully useful for those with this complication (I _love_ the idea of a moon phase complication, but find most options to _dressy_ for me!).
+
+Finally, I've made it easier to get in touch with me from within the app by adding an email link directly in the sidebar!
+
+
+#### What's New
+- Wrist Recap (BETA).
+- New Case Dimension data points, charts and filters.
+- _'Wear this Watch today'_ button dynamically changes to _'Worn Today'_ once pressed.
+- Added Swiss Franc and Hungarian Forint to the currency options.
+- Moon Phase calculator added to the Time Setting page for Pro users.
+- Developer feedback email link added to the app sidebar.
+
+#### Known Issues
+- There is now a bug with Android 15 preventing images from cropping successfully - a fix has been identified and included in v1.13 which is due _imminently!_
+
+<br>
+
+# **Version 1.11.0**
+A relatively light update, with a lot of the change incremental and behind the scenes, with many small changes made based on user feedback. A key example being the new 'Retired' status - perfect for those older watches you may have lying around that don't get worn anymore, but that you'll also never let go of! Retired watches don't show in the main collection, but can be filtered from the main view in the same was as Wishlist or Sold watches.
+
+In addition, at a user request, I've added a 'Since last Purchase' filter option to the Wear charts - you can now see how you've been wearing your watches since you last added a new one to the collection - just how strong is that _honeymoon pull!_
+
+#### What's New
+- Added a new 'Retired' status for Watches.
+- The first day of the week is now manually selectable in settings for all calendar views.
+- 'Since last Purchase' filter added to the Wear Charts.
+- Added manual selection of Light/Dark theme, rather than relying on system default only.
+- When tracking wear directly from the calendar view, the searchable watch picker dropdown now shows watches in the same order as the watchbox view preference.
+- Updated 'What's New' pop-up, giving more space and a cleaner look.
+- [Hidden] Refactor of the Watch detail page in advance of upcoming changes to add more data.
+
+#### Bug Fixes
+- The Cost per Wear chart now resizes based on the size of the collection, to ensure all entries are visible.
+
+<br>
+
 # **Version 1.10.0**
 I had planned a larger release for v1.10, since its the 10th major release of the app (time flies!), but I also got a new laptop recently which meant migrating all the parts of my dev setup that aren't backed up in Github (such as API and signing keys), so decided to focus on one main feature that I've wanted to add for a while and make available to everyone - a new network synchronised clock!
 
