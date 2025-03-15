@@ -5,11 +5,42 @@ include_in_header: true
 ---
 
 # Change log
-Here you can view a change log and version history for **WristTrack**. Got some suggestions for features you’d like to see in a future update? Please feel free to mention in an app review via Apple or Google, drop me an email or message me on Instagram!
+Here you can view a change log and version history for **WristTrack** - I try to keep this updated whenever I release a new version, with a little commentary around the changes made and their inspiration. You can always find the latest summarised release notes within the app in the 'About App' section, found within the main sidebar.
+
+ Got some suggestions for features, bug fixes or improvements you’d like to see in a future update? Please feel free to mention in an app review via Apple or Google, [drop me an email](feedback@wristtrack.app) or message me on [Instagram](https://www.instagram.com/wristtrack.app/)!
 
 <br>
 
 ### `Latest`
+# **Version 1.13.0**
+I recently visited my first watch group meetup - a Redbar Glasgow event where representatives of Christopher Ward were on hand to show off their range of watches (for anyone who follows my Instagram account, that's where I fell in love with the 38mm Twelve in peach that I later went on to purchase...). During the event I was chatting with some people about our collections and I instinctively pulled out the app to show them some stats... and realised that it was _useless_ for the purpose of _showing off your collection_. I honestly thought nothing of it and mumbled an apology before loading up Google Photos and searching for the watch I wanted to show them.
+
+A few weeks later though I got a suggestion from a user (I've said it so many times, but I really do listen to these!) who said "why not add a gallery view to quickly show off your watch collection" and that prior event sprang back to mind! Could I do that? Would the images saved be high enough quality to show full screen (I purposely crop and compress images in the app when taken, as the photos are meant to act as thumbnails)... would this make sense from in the UI?
+
+So I went away and did what I often do and started prototyping on a safe code branch... and you know what... the answer to the above questions were all _'yes!'_
+
+So the main update in this release is a new watch gallery view - you can look at all the watches in your collection, or use variations on existing filters to look at your favourites, sold watches, wishlist, or other options where you may have saved pictures in the app! (and of course I'll use these foundations to add to future improvements too!).
+
+Additionally I continued to extend the 'nerd stats' section available to Pro users to add some more data points - this time adding a field for water resistance ratings, and another for case materials... and of course you can also see aggregate charts for these in the collection stats pages, or use them to filter the wear charts!
+
+#### What's New
+- Gallery View
+- Additional 'Nerd' data and charts for Pro users - Water Resistance and Case Material
+
+#### Improvements
+- Any feedback email triggered from the app adds the app version and platform to the email include_in_header
+- Keyboard triggers updated for iOS users to ensure that they can include decimals (where appropriate) in case dimensions
+
+#### Bug fixes
+- Pie Charts now work for all Pro related chart filters (case dimensions etc)
+- Fixed an issue where Android 15 users were unable to save watch images
+- Updated daily reminder text to amend _WristCheck_ to _WristTrack_
+- Defensive code added to help reduce Google Admob related soft crashes
+
+
+
+<br>
+
 # **Version 1.12.1**
 I started this release with some good intentions - I really wanted to release a new feature, _Wrist Recap_, before the end of 2024, to act similar to _'Spotify Wrapped'_, giving users a summary of their collection and wearing habits over the course of the year... however the more I looked at it, the _bigger_ it got! Which was proving detrimental to getting it finished and moving onto other, long promised work... and past the point where it would arrive in 2024!
 
