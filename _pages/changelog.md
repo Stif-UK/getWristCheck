@@ -28,7 +28,7 @@ Additionally I continued to extend the 'nerd stats' section available to Pro use
 - Additional 'Nerd' data and charts for Pro users - Water Resistance and Case Material
 
 #### Improvements
-- Any feedback email triggered from the app adds the app version and platform to the email include_in_header
+- Any feedback email triggered from the app adds the app version and platform to the email subject
 - Keyboard triggers updated for iOS users to ensure that they can include decimals (where appropriate) in case dimensions
 
 #### Bug fixes
