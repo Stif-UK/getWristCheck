@@ -7,7 +7,7 @@ include_in_header: true
 # Change log
 Here you can view a change log and version history for **WristTrack** - I try to keep this updated whenever I release a new version, with a little commentary around the changes made and their inspiration. You can always find the latest summarised release notes within the app in the 'About App' section, found within the main sidebar.
 
- Got some suggestions for features, bug fixes or improvements you’d like to see in a future update? Please feel free to mention in an app review via Apple or Google, [drop me an email](feedback@wristtrack.app) or message me on [Instagram](https://www.instagram.com/wristtrack.app/)!
+ Got some suggestions for features, bug fixes or improvements you’d like to see in a future update? Please feel free to mention in an app review via Apple or Google, [drop me an email](mailto:feedback@wristtrack.app) or message me on [Instagram](https://www.instagram.com/wristtrack.app/)!
 
 <br>
 
