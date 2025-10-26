@@ -12,6 +12,56 @@ Here you can view a change log and version history for **WristTrack** - I try to
 <br>
 
 ### `Latest`
+
+# **Version 1.15.1**
+This latest version is long overdue - partly because I started working on some new features that turned out to be a little _too big_ (watch out for that in the next release hopefully!), but also because this release required quite a bit of work to get the app builds working when targeting the latest versions of Android and iOS (to keep the app in the stores these updates are required every year). This process often grows arms and legs, as updating one dependency then requires additional change and testing to keep things working - this years update proved to be a bit of a headache!
+
+Due to these, whilst this update took a while to deliver it's also relatively small, but hopefully useful! The first major update is a change to the watch images - instead of the previous front / back images, there's now a three image gallery for each watch, with a much nicer UI:
+If no image is in a space tapping on it brings up the image picker. If an image does exist, the image is enlarged to bring up a larger gallery for the watch.
+In the gallery images can be replaced or deleted with a long press (can you believe that until now there was no way to delete an image in the app, only to replace it!).
+
+Another update in this release is a new 'delete watch' button - of all the messages I receive the most common question has been "how do I delete a watch I've added in error?".
+Until now, this process was to edit the watch, change it's status to 'Archived' and then delete from the Archive... long winded, and not super obvious! Now, if you edit the watch a 'delete' button appears, and when pressed a confirmation dialog appears asking the user if they want to continue.
+The watch is still 'soft deleted' first, by moving it to the Archive (so it can be restored to the collection easily), but hopefully this is a much nicer user experience!
+
+Finally, there are now three new currencies available to select (as below) - as always, if there's something missing feel free to reach out and ask, always happy to add these in :)
+
+#### What's New
+- Improved watch image gallery and ability to save third picture, as well as ability to delete pictures
+- Improved UX flow for deleting a watch
+- New currencies added: Norwegian Krone, Thai Baht & Czeck Koruna
+
+#### Improvements
+- Updates to the calendar view to ensure all appropriate watch statuses display
+- Updates to the CSV data extract options to include all the recently added
+- Updates to numerous libraries to support latest OS versions
+
+<br>
+
+# **Version 1.14.0**
+This update is more evolution than revolution - and as always heavily influenced by comments in reviews and messages I've received from app users. Firstly, there was a suggestion of laying out the key dates tracked in a timeline - a way to see what watches had been bought and sold and when, along with other dates like warranty expiries and tracked services. I loved this idea, so in the 'More' section of the app I've implemented a TimeLine view, this shows any dates tracked in the app, with the ability to toggle on or off different types to change the view.
+Another request I received related to the ability to add watch names in Russian or other Cyrillic alphabets, so the validation rules have been updated to allow watch names using these characters to be saved (and a huge 'thank you' to Egor for providing some sample watch information to help me test this out!).
+Other changes are smaller - such as adding some text with watch info to the gallery view (which can be toggled on or off with a tap) and adding additional information to the Pro data section.
+
+#### What's New
+- New TimeLine view Added
+- Updated validation rules to support Cyrillic alphabet
+- Polish Zloty added to currency options
+- Watch details added to Gallery View
+- (Pro) Toggle added to hide monetary values from the cost per wear charts
+- (Pro) Ability to track date complication added to the Pro data section, along with associated charts
+- (Pro) Ability to save watch winder settings added
+
+#### Improvements
+- Background colour added to watch box and selection drop downs to improve visibility
+- 'Not Entered' value removed from case material charts
+- 'All' option added to the Gallery view (showing all non-archived watches).
+- (Pro) 'Nerd Data' renamed to 'Pro Data' on the Watch detail view
+
+#### Bug fixes
+- Fixed an issue where some collection charts would fail to load where null values were encountered
+<br>
+
 # **Version 1.13.0**
 I recently visited my first watch group meetup - a Redbar Glasgow event where representatives of Christopher Ward were on hand to show off their range of watches (for anyone who follows my Instagram account, that's where I fell in love with the 38mm Twelve in peach that I later went on to purchase...). During the event I was chatting with some people about our collections and I instinctively pulled out the app to show them some stats... and realised that it was _useless_ for the purpose of _showing off your collection_. I honestly thought nothing of it and mumbled an apology before loading up Google Photos and searching for the watch I wanted to show them.
 
