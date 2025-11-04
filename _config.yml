@@ -38,11 +38,15 @@ features                                  :
 
   - title                                 : Manage Your Watch Collection
     description                           : Add details of your watches to the app to keep them handy.
-    fontawesome_icon_name                 : clock
+    fontawesome_icon_name                 : database
 
   - title                                 : Track What You Wear
     description                           : Quickly track what's on your wrist and view charts to see what you wear most.
     fontawesome_icon_name                 : signal
+
+  - title                                 : Atomic Time
+    description                           : Set your watches accurately with network time synced with atomic clocks
+    fontawesome_icon_name                 : clock
 
   - title                                 : Daily Reminder
     description                           : Receive a daily reminder to update the app with what's on your wrist.
