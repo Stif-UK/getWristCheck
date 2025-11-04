@@ -52,6 +52,10 @@ features                                  :
     description                           : Receive a daily reminder to update the app with what's on your wrist.
     fontawesome_icon_name                 : calendar
 
+  - title                                 : Gallery
+    description                           : Save up to three images of each watch, and use the gallery feature to show off your collection.
+    fontawesome_icon_name                 : camera
+
   - title                                 : Quickly Search Your Collection
     description                           : Quickly find the watch you want in a big collection using the real time search feature.
     fontawesome_icon_name                 : search
