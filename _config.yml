@@ -56,6 +56,10 @@ features                                  :
     description                           : Save up to three images of each watch, and use the gallery feature to show off your collection.
     fontawesome_icon_name                 : camera
 
+  - title                                 : Track Accuracy
+    description                           : Calculate watch accuracy over time by tracking time deviation over a period
+    fontawesome_icon_name                 : bullseye
+
   - title                                 : Quickly Search Your Collection
     description                           : Quickly find the watch you want in a big collection using the real time search feature.
     fontawesome_icon_name                 : search

@@ -12,8 +12,59 @@ Here you can view a change log and version history for **WristTrack** - I try to
 <br>
 
 ### `Latest`
+# **Version 1.16.1**
+Ok, despite there being over a month between v1.16 and this 1.16.1 _point release,_ I'm going to group the update together here because it looks like I forgot to write a proper one for v1.16!
 
-# **Version 1.15.1**
+The biggest change here is the addition of accuracy tracking - by creating different checkpoints, where the time on your watch is tracked along with the accurate atomic time, the app can compare the change in these times to calculate the rate of drift (I'll implement some charts in future releases!)
+
+Another feature that I've been meaning to add for a long time is the ability to add multiple dates to a watches wear history quickly - to access this, access the calendar from the individual watch pages. From here, you can now choose to either select multiple dates or quickly add a range by selecting the first and last wear dates.
+
+Finally I've made a small, but hopefully useful, update to the watch images - any image can now be set as the 'primary' image for a watch. The primary image will be shown in the watchbox view, as well as in the watch gallery. Useful if you often switch between straps and want to be able to pick a different main image depending on the current strap pairing.
+
+
+#### What's New
+- Accuracy Tracking: take checkpoints and calculate the time deviation in seconds per day, month or year
+- Add multiple dates to the watch Calendar
+- Any watch image can now be set as the _primary_ image for the watch, which will show in all other views (e.g. gallery or watchbox)
+
+
+#### Improvements
+- Watch charts updated with _'last 12 months'_ and _'between two dates'_ filters
+- Removed the unnecessary leading zero on the time setting view when time is set to AM/PM
+- Malaysian Ringgit added to currency listen
+- Spring drive added to movements
+- PVD Steel and Tungsten added to materials
+
+#### Bug fixes
+- Fixed issue where clock preferences weren't saving on the time setting tab
+- Fixed bug where some calendar views didn't respect the user selected first day of the week
+- On Android the app icon is now adaptive, so should show a 'full' icon on all devices
+
+
+<br>
+
+### `Previous versions`
+
+ - [v1.15.1](#Version 1.15.1)
+ - [v1.14.0](#Version 1.14.0)
+ - [v1.13.0](#Version 1.13.0)
+ - [v1.12.1](#Version 1.12.1)
+ - [v1.11.0](#Version 1.11.0)
+ - [v1.10.0](#Version 1.10.0)
+ - [v1.9.1](#Version 1.9.1)
+ - [v1.9.0](#Version 1.9.0)
+ - [v1.8.0](#Version 1.8.0)
+ - [v1.7.1](#Version 1.7.1)
+ - [v1.6.4](#Version 1.6.4)
+ - [v1.6.1](#Version 1.6.1)
+ - [v1.5.1](#Version 1.5.1)
+ - [v1.4.1](#Version 1.4.1)
+ - [v1.3](#Version 1.3)
+ - [v1.2](#Version 1.2)
+ - [v1.1](#Version 1.1)
+ - [v1.0](#Version 1.0)
+
+# **Version 1.15.1**<a name="Version 1.15.1"></a>
 This latest version is long overdue - partly because I started working on some new features that turned out to be a little _too big_ (watch out for that in the next release hopefully!), but also because this release required quite a bit of work to get the app builds working when targeting the latest versions of Android and iOS (to keep the app in the stores these updates are required every year). This process often grows arms and legs, as updating one dependency then requires additional change and testing to keep things working - this years update proved to be a bit of a headache!
 
 Due to these, whilst this update took a while to deliver it's also relatively small, but hopefully useful! The first major update is a change to the watch images - instead of the previous front / back images, there's now a three image gallery for each watch, with a much nicer UI:
@@ -38,7 +89,7 @@ Finally, there are now three new currencies available to select (as below) - as 
 
 <br>
 
-# **Version 1.14.0**
+# **Version 1.14.0**<a name="Version 1.14.0"></a>
 This update is more evolution than revolution - and as always heavily influenced by comments in reviews and messages I've received from app users. Firstly, there was a suggestion of laying out the key dates tracked in a timeline - a way to see what watches had been bought and sold and when, along with other dates like warranty expiries and tracked services. I loved this idea, so in the 'More' section of the app I've implemented a TimeLine view, this shows any dates tracked in the app, with the ability to toggle on or off different types to change the view.
 Another request I received related to the ability to add watch names in Russian or other Cyrillic alphabets, so the validation rules have been updated to allow watch names using these characters to be saved (and a huge 'thank you' to Egor for providing some sample watch information to help me test this out!).
 Other changes are smaller - such as adding some text with watch info to the gallery view (which can be toggled on or off with a tap) and adding additional information to the Pro data section.
@@ -62,7 +113,7 @@ Other changes are smaller - such as adding some text with watch info to the gall
 - Fixed an issue where some collection charts would fail to load where null values were encountered
 <br>
 
-# **Version 1.13.0**
+# **Version 1.13.0**<a name="Version 1.13.0"></a>
 I recently visited my first watch group meetup - a Redbar Glasgow event where representatives of Christopher Ward were on hand to show off their range of watches (for anyone who follows my Instagram account, that's where I fell in love with the 38mm Twelve in peach that I later went on to purchase...). During the event I was chatting with some people about our collections and I instinctively pulled out the app to show them some stats... and realised that it was _useless_ for the purpose of _showing off your collection_. I honestly thought nothing of it and mumbled an apology before loading up Google Photos and searching for the watch I wanted to show them.
 
 A few weeks later though I got a suggestion from a user (I've said it so many times, but I really do listen to these!) who said "why not add a gallery view to quickly show off your watch collection" and that prior event sprang back to mind! Could I do that? Would the images saved be high enough quality to show full screen (I purposely crop and compress images in the app when taken, as the photos are meant to act as thumbnails)... would this make sense from in the UI?
@@ -91,7 +142,7 @@ Additionally I continued to extend the 'nerd stats' section available to Pro use
 
 <br>
 
-# **Version 1.12.1**
+# **Version 1.12.1**<a name="Version 1.12.1"></a>
 I started this release with some good intentions - I really wanted to release a new feature, _Wrist Recap_, before the end of 2024, to act similar to _'Spotify Wrapped'_, giving users a summary of their collection and wearing habits over the course of the year... however the more I looked at it, the _bigger_ it got! Which was proving detrimental to getting it finished and moving onto other, long promised work... and past the point where it would arrive in 2024!
 
 Instead I got it to a point where the foundations were in place - it will let you pick a year from any with data, create some data sets based on this and structure the data for easy access and handle things like empty values... it only shows changes in collections size, overall wear count and the top three watches worn in a year though - but the _potential_ is there! So in this release it's got a _'BETA'_ tag on it as it's just a starting point for something more to come. I considered turning it off, but thought releasing it would gather more input and feedback (and if you have any, please reach out!)
@@ -119,7 +170,7 @@ Finally, I've made it easier to get in touch with me from within the app by addi
 
 <br>
 
-# **Version 1.11.0**
+# **Version 1.11.0**<a name="Version 1.11.0"></a>
 A relatively light update, with a lot of the change incremental and behind the scenes, with many small changes made based on user feedback. A key example being the new 'Retired' status - perfect for those older watches you may have lying around that don't get worn anymore, but that you'll also never let go of! Retired watches don't show in the main collection, but can be filtered from the main view in the same was as Wishlist or Sold watches.
 
 In addition, at a user request, I've added a 'Since last Purchase' filter option to the Wear charts - you can now see how you've been wearing your watches since you last added a new one to the collection - just how strong is that _honeymoon pull!_
@@ -138,7 +189,7 @@ In addition, at a user request, I've added a 'Since last Purchase' filter option
 
 <br>
 
-# **Version 1.10.0**
+# **Version 1.10.0**<a name="Version 1.10.0"></a>
 I had planned a larger release for v1.10, since its the 10th major release of the app (time flies!), but I also got a new laptop recently which meant migrating all the parts of my dev setup that aren't backed up in Github (such as API and signing keys), so decided to focus on one main feature that I've wanted to add for a while and make available to everyone - a new network synchronised clock!
 
 There's now a new tab on the main page labelled 'time' which opens up a clock displaying the current time - it starts of based on the device system time, but quickly gets responses from network time servers (and will continue to improve accuracy as more servers respond) to show the most accurate time possible. I've also implemented an optional audible countdown of the last few seconds each minute (with a larger 'chime' when the clock hits "00") to help accurate time setting. (As an aside, I find it a little amusing that despite mechanical watches often only being accurate to a few seconds a day, I still *really want* to make sure they're accurate when I set them!)
@@ -160,7 +211,7 @@ So that's it for v1.10 - as always feedback is appreciated!
 
 <br>
 
-# **Version 1.9.1**
+# **Version 1.9.1**<a name="Version 1.9.1"></a>
 A super quick, but important update - version 1.9.1 updates the app name from *WristCheck* to **WristTrack**.
 
 When I set up the app I naively didn't think to check if the name was already being used elsewhere, so was surprised to find _WristCheck_ is a registered trademark - full credit to the team at [WristCheck.com](https://www.wristcheck.com) (the holders of the trademark) though, they were excellent about it and I was able to get an update together for the app within around a week.
@@ -172,7 +223,7 @@ I'm sure I've missed a reference or two to 'WristCheck' within the app, but I'll
 
 <br>
 
-# **Version 1.9.0**
+# **Version 1.9.0**<a name="Version 1.9.0"></a>
 A relatively big update this time, with some nice new additions and the first 'WristCheck Pro' feature drops - to date all functionality has been free to everyone, and it's important to me that the app provides value to everyone (I didn't set out to make money, I set out to make an app for fellow watch nerds!) but I think the app has now reached the point where it's got a really solid set of core features (watch data tracking, wear tracking and charts, a visual representation of what you've worn via the calendar etc) so felt it was time to add a few wee extras for the extra nerdy amongst us!
 
 But first up, I wanted to include some more features that improve the app experience for everyone...
@@ -198,7 +249,7 @@ Then, last but by no means least, I've added some per-watch graphs (currently ac
 
 <br>
 
-# **Version 1.8.0**
+# **Version 1.8.0**<a name="Version 1.8.0"></a>
 When I first built WristCheck I was relatively new to watch collecting, having recently purchased my first mechanical watch... I was also clearly quite naive as I thought a schedule of when services were due would be a headline feature of the app! Instead, I got quite a bit of feedback that, whilst it's useful to know when servicing is due per manufacturers suggestions, many owners only get their watches serviced at the point where they notice a drop in accuracy.
 I've also never been happy with the lack of visualisation of how your wear tracking is going, which was visible as a big list of dates per watch... so this fix hopefully addresses this with the addition of a new **Calendar View**.
 From the main landing page, this replaces the third page tab, and populates a calendar quickly highlighting each day where a watch wear has been recorded, as well as showing upcoming service due dates (if tracked) and **warranty expiry dates.**
@@ -222,7 +273,7 @@ With this release I think I'm now happy with the primary features of the app, so
 
 <br>
 
-# **Version 1.7.1**
+# **Version 1.7.1**<a name="Version 1.7.1"></a>
 Another self-contained, _big_ release, and one that I'm really proud of! When I built **WristCheck** I initially wanted to be able to use data to really _understand_ my collection and how I interacted with that. The _Wear Charts_ were the first manifestation of this, however they were quite basic, only showing individual watches with counts which could be filtered by a combination of month and year...
 With version 1.7.1 though I've attempted to supercharge that! You can now see the charts over alternative time periods (such as last 30 or 90 days), have additional options to group the results (by watch, by manufacturer, by category or by movement type!) and you can filter the results to include or exclude sold and archived watches, or to only show specific movement types or watch categories!
 
@@ -238,7 +289,7 @@ With version 1.7.1 though I've attempted to supercharge that! You can now see th
 
 <br>
 
-# **Version 1.6.4**
+# **Version 1.6.4**<a name="Version 1.6.4"></a>
 This release includes a few small improvements and bug fixes which didn't feel like they warranted a large version bump. Behind the scenes updates include implementation of improved crash logging and analytics to help me to make the app _better,_ as well as a new pre-order status to provide a countdown to a watches target release/delivery date.
 
 #### What's New
@@ -253,7 +304,7 @@ This release includes a few small improvements and bug fixes which didn't feel l
 
 <br>
 
-# **Version 1.6.1**
+# **Version 1.6.1**<a name="Version 1.6.1"></a>
 In version 1.6 I have focused on improving the add/view/edit watch user interface, to (hopefully) make it more intuitive to use, and easier to find the details you want quickly!
 
 Additionally, this release includes new data points that you can save for each watch, including: category, movement type, and purchase and sale information (such as date, price and who the watch was bought from/sold to).
@@ -270,7 +321,8 @@ Of course more data also means more analysis, so the app can now also provide a 
 - The way database backup works has been changed to avoid a crash issue on iOS - now rather than the app attempting to write a copy of the database to a new location, it pushes a copy to the platforms 'share' function, allowing you to send the database copy wherever you like quickly (I'd recommend sending to iCloud/Google Drive or similar every so often!).
 
 <br>
-# **Version 1.5.1**
+
+### **Version 1.5.1**<a name="Version 1.5.1"></a>
 In version 1.5 the main update is a change to the user interface of the main watch box view. The page now shows watch images (if you've added them!), adds various options to change the display order of the watches and lets you choose between the original list view, or a grid view with larger images.
 It also makes access to search more prominent and makes it easier to switch between your various 'watch boxes' (e.g. your wishlist or sold watches)
 
@@ -287,7 +339,7 @@ It also makes access to search more prominent and makes it easier to switch betw
 
 <br>
 
-### **Version 1.4.1**
+### **Version 1.4.1**<a name="Version 1.4.1"></a>
 This update focuses on making me rich... wait, sorry! It focuses on letting users remove ads from the app with a quick and simple in-app payment. I rely on the ad income to help me cover the development costs of the app (sadly it's not free!) but in this release have added a way to remove these, and allowed the user to pick the price they pay to do so.
 
 #### What's New
@@ -300,7 +352,7 @@ This update focuses on making me rich... wait, sorry! It focuses on letting user
 
 <br>
 
-### **Version 1.3**
+### **Version 1.3**<a name="Version 1.3"></a>
 I love looking at the back of some of my watches almost as much as I love looking at their dials! So in this update I've added the ability to capture a second picture for each watch - nobody is forcing you to use this for the case back of course, but that's why I put it in there!
 The update also adds the ability to upload the watch images at the same time you add the watch record to the app, rather than having to go in and do it as a second action (which I'm sure you'll agree is an improvement!).
 To improve the chart experience I've also included the ability to set defaults for the chart view (so you can have it always show the current year, current month, previous month or all time stats).
@@ -320,7 +372,7 @@ Lastly I've included logic that will prompt to leave a rating or review after a 
 
 <br>
 
-### **Version 1.2**
+### **Version 1.2**<a name="Version 1.2"></a>
 A relatively small release, v1.2 introduces small ads throughout the app - I've tried to keep these as unobtrusive as possible - most are small banner ads, with some pages with more whitespace showing slightly larger banners.
 
 #### What's New
@@ -333,7 +385,7 @@ A relatively small release, v1.2 introduces small ads throughout the app - I've 
 
 <br>
 
-### **Version 1.1**
+### **Version 1.1**<a name="Version 1.1"></a>
 In the first major update to WristCheck a _'what's new'_ pop-up has been included, that displays whenever the app is updated to advise of any new features - and to make use of it this release also includes an option to backup and restore the app database, as well as introducing the option to setup a helpful daily reminder to track what watch you're wearing.
 
 #### What's New
@@ -350,7 +402,7 @@ ________
 <br>
 
 ### `Initial Release`
-# **Version 1.0**
+# **Version 1.0**<a name="Version 1.0"></a>
 Welcome to WristCheck!
 I've built this app as a digital watch box companion - you can use it to track the watches you own and how often you're wearing them, as well as to track a wish list of watches that you'd like to purchase in the future.
 
