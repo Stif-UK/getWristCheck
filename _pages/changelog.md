@@ -12,39 +12,45 @@ Here you can view a change log and version history for **WristTrack** - I try to
 <br>
 
 ### `Latest`
-# **Version 1.16.1**
-Ok, despite there being over a month between v1.16 and this 1.16.1 _point release,_ I'm going to group the update together here because it looks like I forgot to write a proper one for v1.16!
+# **Version 1.17.0**
+A fairly major update this time, as I've spent the past few _months_ working on internationalising the app - which involved stripping every piece of text out into a single file, generating translation files in multiple languages and implementing the under the hood framework to then allow instant switching between chosen languages!
+When I started this seemed like it would be fairly straightforward... oh how naive I was! Different languages use different groupings for numbers and plurals - the framework handled these, but it meant a bit more thought had to go into how some of the app was laid out and held together (so custom code I'd written in some places was binned in favour of the language framework alternatives).
+In some languages phrases were significantly longer or shorter, leading to text overflows and other layout challenges, so I reworked some of the UI in the app to ensure text fit as expected - in some places, like the watchbox this led to a significant UI update. In other areas I just needed to be smarted about how text could dynamically scale.
 
-The biggest change here is the addition of accuracy tracking - by creating different checkpoints, where the time on your watch is tracked along with the accurate atomic time, the app can compare the change in these times to calculate the rate of drift (I'll implement some charts in future releases!)
+I think the end result is worth it though. When I created WristTrack I didn't expect it to find such a large, globally diverse audience, but it has and so it feels only right to make it available in users languages of choice. The current list in by no means complete - as a starter, the app supports **French, German, Russian and Czech**. These were picked not necessarily because these are the most used, but they're languages where users came forward to offer support with the translation activity - I was able to use AI tools to support the translation, but I'm not happy releasing the app without at least a review by some native speakers.
 
-Another feature that I've been meaning to add for a long time is the ability to add multiple dates to a watches wear history quickly - to access this, access the calendar from the individual watch pages. From here, you can now choose to either select multiple dates or quickly add a range by selecting the first and last wear dates.
+In addition to the changes mentioned above the list of currencies that can be set as the apps default has grown quite a bit, to the extent that as well as adding the currencies I also added the ability to search the list to choose the option required.
 
-Finally I've made a small, but hopefully useful, update to the watch images - any image can now be set as the 'primary' image for a watch. The primary image will be shown in the watchbox view, as well as in the watch gallery. Useful if you often switch between straps and want to be able to pick a different main image depending on the current strap pairing.
+Finally, I added a new status to the watch collection - "On Loan". I know I've got a few users who get watches in hand to review, and others who share watches with friends, so now there's a status to track these! On loan watches sit in their own list, separate to the main watch box, but can be included in the charts with a quick toggle in the chart settings.
+
+This has probably been one of the longest gaps I've gone between releasing updates, thanks to everyone who has bore with me whilst I put this one together!
 
 
 #### What's New
-- Accuracy Tracking: take checkpoints and calculate the time deviation in seconds per day, month or year
-- Add multiple dates to the watch Calendar
-- Any watch image can now be set as the _primary_ image for the watch, which will show in all other views (e.g. gallery or watchbox)
+- Ability to select the primary app language (English, French, German, Russian, Czech)
+- UI improvements to the Watch Box List view - watch details are now on larger cards, with improved image size
+- UI improvements to the Watch Box Grid view - borders removed and larger images are presented with watch information below.
+- Wear count and last worn date can now be toggled on or off in the watch box view
+- UI improvements to the Watch Gallery
+- Multiple additional currencies added (Canadian Dollars, Swedish Krona, Danish Krone, Brazilian Real, Korean Won, Philippine Peso)
+- Currency list is now searchable to make selection easier
 
 
 #### Improvements
-- Watch charts updated with _'last 12 months'_ and _'between two dates'_ filters
-- Removed the unnecessary leading zero on the time setting view when time is set to AM/PM
-- Malaysian Ringgit added to currency listen
-- Spring drive added to movements
-- PVD Steel and Tungsten added to materials
+- Pro data sections are expanded by default, but can be shrunk as required, rather than the other way around.
+- App anonymous ID has been added to the Settings page to make it easy to copy - this aids payment troubleshooting.
+- When wearing a watch, snackbars (small text pop-ups) have been moved to the top, rather than bottom of the screen.
 
 #### Bug fixes
-- Fixed issue where clock preferences weren't saving on the time setting tab
-- Fixed bug where some calendar views didn't respect the user selected first day of the week
-- On Android the app icon is now adaptive, so should show a 'full' icon on all devices
+- Fixed issue where some button text overflowed on some screen sizes.
+- Fixed an issue where Wrist Recap always calculated wears per day using the full year, even if only partial tracking data was available.
 
 
 <br>
 
 ### `Previous versions`
 
+ - [v1.16.1](#Version 1.16.1)
  - [v1.15.1](#Version 1.15.1)
  - [v1.14.0](#Version 1.14.0)
  - [v1.13.0](#Version 1.13.0)
@@ -63,6 +69,34 @@ Finally I've made a small, but hopefully useful, update to the watch images - an
  - [v1.2](#Version 1.2)
  - [v1.1](#Version 1.1)
  - [v1.0](#Version 1.0)
+
+ # **Version 1.16.1**<a name="Version 1.16.1"></a>
+ Ok, despite there being over a month between v1.16 and this 1.16.1 _point release,_ I'm going to group the update together here because it looks like I forgot to write a proper one for v1.16!
+
+ The biggest change here is the addition of accuracy tracking - by creating different checkpoints, where the time on your watch is tracked along with the accurate atomic time, the app can compare the change in these times to calculate the rate of drift (I'll implement some charts in future releases!)
+
+ Another feature that I've been meaning to add for a long time is the ability to add multiple dates to a watches wear history quickly - to access this, access the calendar from the individual watch pages. From here, you can now choose to either select multiple dates or quickly add a range by selecting the first and last wear dates.
+
+ Finally I've made a small, but hopefully useful, update to the watch images - any image can now be set as the 'primary' image for a watch. The primary image will be shown in the watchbox view, as well as in the watch gallery. Useful if you often switch between straps and want to be able to pick a different main image depending on the current strap pairing.
+
+
+ #### What's New
+ - Accuracy Tracking: take checkpoints and calculate the time deviation in seconds per day, month or year
+ - Add multiple dates to the watch Calendar
+ - Any watch image can now be set as the _primary_ image for the watch, which will show in all other views (e.g. gallery or watchbox)
+
+
+ #### Improvements
+ - Watch charts updated with _'last 12 months'_ and _'between two dates'_ filters
+ - Removed the unnecessary leading zero on the time setting view when time is set to AM/PM
+ - Malaysian Ringgit added to currency listen
+ - Spring drive added to movements
+ - PVD Steel and Tungsten added to materials
+
+ #### Bug fixes
+ - Fixed issue where clock preferences weren't saving on the time setting tab
+ - Fixed bug where some calendar views didn't respect the user selected first day of the week
+ - On Android the app icon is now adaptive, so should show a 'full' icon on all devices
 
 # **Version 1.15.1**<a name="Version 1.15.1"></a>
 This latest version is long overdue - partly because I started working on some new features that turned out to be a little _too big_ (watch out for that in the next release hopefully!), but also because this release required quite a bit of work to get the app builds working when targeting the latest versions of Android and iOS (to keep the app in the stores these updates are required every year). This process often grows arms and legs, as updating one dependency then requires additional change and testing to keep things working - this years update proved to be a bit of a headache!
