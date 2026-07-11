@@ -12,44 +12,39 @@ Here you can view a change log and version history for **WristTrack** - I try to
 <br>
 
 ### `Latest`
-# **Version 1.17.0**
-A fairly major update this time, as I've spent the past few _months_ working on internationalising the app - which involved stripping every piece of text out into a single file, generating translation files in multiple languages and implementing the under the hood framework to then allow instant switching between chosen languages!
-When I started this seemed like it would be fairly straightforward... oh how naive I was! Different languages use different groupings for numbers and plurals - the framework handled these, but it meant a bit more thought had to go into how some of the app was laid out and held together (so custom code I'd written in some places was binned in favour of the language framework alternatives).
-In some languages phrases were significantly longer or shorter, leading to text overflows and other layout challenges, so I reworked some of the UI in the app to ensure text fit as expected - in some places, like the watchbox this led to a significant UI update. In other areas I just needed to be smarted about how text could dynamically scale.
+# **Version 1.18.0**
+In early 2025 I added Wrist Recap to WristTrack - initially as a beta of the feature, the idea was to allow a user to see an annual summary of their collection, with a bit more insight into what they had bought, sold and worn throughout the year.
+Whilst the feature was fun, it never felt _finished_ - so in v1.18 I've revisited and completely overhauled it.
+To date, when using WristTrack to track what you wear you would then need to look yourself at the stats and charts generated, but with the latest version, once a month your stats will come to you!
+Firstly, there's a new monthly banner that will appear above the watchbox (until either followed or dismissed). When followed it takes you to Wrist Recap displaying a summmary of your data for the past month (or the past year!).
+The page then generates dynamically - it will always show your watches worn and a monthly wear chart, but other elements of the page are included only where they might add value - for example, if you have worn multiple watches by the same manufacturer a breakdown of wears by brand will appear.
+If you're looking at a summary of the full year then along with the the standard wear chart you'll also see a summary of the number one watches for each month of the year.
+...and the best bit? You can generate any of this anytime you want - just head to Stats > Wrist Recap and you can view for any month or year that you've already tracked data for!
 
-I think the end result is worth it though. When I created WristTrack I didn't expect it to find such a large, globally diverse audience, but it has and so it feels only right to make it available in users languages of choice. The current list in by no means complete - as a starter, the app supports **French, German, Russian and Czech**. These were picked not necessarily because these are the most used, but they're languages where users came forward to offer support with the translation activity - I was able to use AI tools to support the translation, but I'm not happy releasing the app without at least a review by some native speakers.
+Additionally I've made a start on a wider review of the Watchbox itself - firstly with the addition of a new Gallery view option (to go along with the existing list and grid views). This creates a smaller grid that only includes the primary watch images with no other surrounding data.
 
-In addition to the changes mentioned above the list of currencies that can be set as the apps default has grown quite a bit, to the extent that as well as adding the currencies I also added the ability to search the list to choose the option required.
-
-Finally, I added a new status to the watch collection - "On Loan". I know I've got a few users who get watches in hand to review, and others who share watches with friends, so now there's a status to track these! On loan watches sit in their own list, separate to the main watch box, but can be included in the charts with a quick toggle in the chart settings.
-
-This has probably been one of the longest gaps I've gone between releasing updates, thanks to everyone who has bore with me whilst I put this one together!
+I've also update the search option - it still does a real-time search of the watch database (refreshing as every letter is entered...) but now returns a more detailed card view of the results, including watch images where possible. It also now includes the ability to search the notes field of the watch, in addition to (or instead of) the watch name.
 
 
 #### What's New
-- Ability to select the primary app language (English, French, German, Russian, Czech)
-- UI improvements to the Watch Box List view - watch details are now on larger cards, with improved image size
-- UI improvements to the Watch Box Grid view - borders removed and larger images are presented with watch information below.
-- Wear count and last worn date can now be toggled on or off in the watch box view
-- UI improvements to the Watch Gallery
-- Multiple additional currencies added (Canadian Dollars, Swedish Krona, Danish Krone, Brazilian Real, Korean Won, Philippine Peso)
-- Currency list is now searchable to make selection easier
-
+- Huge update to Wrist Recap - now dynamically generates summaries and insights for months or years
+- Monthly Wrist Recap prompt highlighting when new reports are available
+- New image only Gallery view option available for the main Watchbox
+- Updates to Search - more detailed cards (with images) returned, and the ability to search notes added
 
 #### Improvements
-- Pro data sections are expanded by default, but can be shrunk as required, rather than the other way around.
-- App anonymous ID has been added to the Settings page to make it easy to copy - this aids payment troubleshooting.
-- When wearing a watch, snackbars (small text pop-ups) have been moved to the top, rather than bottom of the screen.
+- Updated the underlying build framework to the latest SDK version.
+- Multiple internal libraries updated.
 
 #### Bug fixes
-- Fixed issue where some button text overflowed on some screen sizes.
-- Fixed an issue where Wrist Recap always calculated wears per day using the full year, even if only partial tracking data was available.
+- Fixed a significant issue preventing data backups from completing on iOS26
 
 
 <br>
 
 ### `Previous versions`
 
+ - [v1.17.1](#Version 1.17.1)
  - [v1.16.1](#Version 1.16.1)
  - [v1.15.1](#Version 1.15.1)
  - [v1.14.0](#Version 1.14.0)
@@ -69,6 +64,39 @@ This has probably been one of the longest gaps I've gone between releasing updat
  - [v1.2](#Version 1.2)
  - [v1.1](#Version 1.1)
  - [v1.0](#Version 1.0)
+
+ # **Version 1.17.1**<a name="Version 1.17.1"></a>
+ A fairly major update this time, as I've spent the past few _months_ working on internationalising the app - which involved stripping every piece of text out into a single file, generating translation files in multiple languages and implementing the under the hood framework to then allow instant switching between chosen languages!
+ When I started this seemed like it would be fairly straightforward... oh how naive I was! Different languages use different groupings for numbers and plurals - the framework handled these, but it meant a bit more thought had to go into how some of the app was laid out and held together (so custom code I'd written in some places was binned in favour of the language framework alternatives).
+ In some languages phrases were significantly longer or shorter, leading to text overflows and other layout challenges, so I reworked some of the UI in the app to ensure text fit as expected - in some places, like the watchbox this led to a significant UI update. In other areas I just needed to be smarted about how text could dynamically scale.
+
+ I think the end result is worth it though. When I created WristTrack I didn't expect it to find such a large, globally diverse audience, but it has and so it feels only right to make it available in users languages of choice. The current list in by no means complete - as a starter, the app supports **French, Spanish, German, Russian and Czech**. These were picked not necessarily because these are the most used, but they're languages where users came forward to offer support with the translation activity - I was able to use AI tools to support the translation, but I'm not happy releasing the app without at least a review by some native speakers.
+
+ In addition to the changes mentioned above the list of currencies that can be set as the apps default has grown quite a bit, to the extent that as well as adding the currencies I also added the ability to search the list to choose the option required.
+
+ Finally, I added a new status to the watch collection - "On Loan". I know I've got a few users who get watches in hand to review, and others who share watches with friends, so now there's a status to track these! On loan watches sit in their own list, separate to the main watch box, but can be included in the charts with a quick toggle in the chart settings.
+
+ This has probably been one of the longest gaps I've gone between releasing updates, thanks to everyone who has bore with me whilst I put this one together!
+
+
+ #### What's New
+ - Ability to select the primary app language (English, French, German, Russian, Czech)
+ - UI improvements to the Watch Box List view - watch details are now on larger cards, with improved image size
+ - UI improvements to the Watch Box Grid view - borders removed and larger images are presented with watch information below.
+ - Wear count and last worn date can now be toggled on or off in the watch box view
+ - UI improvements to the Watch Gallery
+ - Multiple additional currencies added (Canadian Dollars, Swedish Krona, Danish Krone, Brazilian Real, Korean Won, Philippine Peso)
+ - Currency list is now searchable to make selection easier
+
+
+ #### Improvements
+ - Pro data sections are expanded by default, but can be shrunk as required, rather than the other way around.
+ - App anonymous ID has been added to the Settings page to make it easy to copy - this aids payment troubleshooting.
+ - When wearing a watch, snackbars (small text pop-ups) have been moved to the top, rather than bottom of the screen.
+
+ #### Bug fixes
+ - Fixed issue where some button text overflowed on some screen sizes.
+ - Fixed an issue where Wrist Recap always calculated wears per day using the full year, even if only partial tracking data was available.
 
  # **Version 1.16.1**<a name="Version 1.16.1"></a>
  Ok, despite there being over a month between v1.16 and this 1.16.1 _point release,_ I'm going to group the update together here because it looks like I forgot to write a proper one for v1.16!
