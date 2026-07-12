@@ -65,6 +65,8 @@ I've also update the search option - it still does a real-time search of the wat
  - [v1.1](#Version 1.1)
  - [v1.0](#Version 1.0)
 
+ <br>
+
  # **Version 1.17.1**<a name="Version 1.17.1"></a>
  A fairly major update this time, as I've spent the past few _months_ working on internationalising the app - which involved stripping every piece of text out into a single file, generating translation files in multiple languages and implementing the under the hood framework to then allow instant switching between chosen languages!
  When I started this seemed like it would be fairly straightforward... oh how naive I was! Different languages use different groupings for numbers and plurals - the framework handled these, but it meant a bit more thought had to go into how some of the app was laid out and held together (so custom code I'd written in some places was binned in favour of the language framework alternatives).
