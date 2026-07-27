@@ -12,7 +12,7 @@ Here you can view a change log and version history for **WristTrack** - I try to
 <br>
 
 ### `Latest`
-# **Version 1.18.0**
+# **Version 1.18.2**
 In early 2025 I added Wrist Recap to WristTrack - initially as a beta of the feature, the idea was to allow a user to see an annual summary of their collection, with a bit more insight into what they had bought, sold and worn throughout the year.
 Whilst the feature was fun, it never felt _finished_ - so in v1.18 I've revisited and completely overhauled it.
 To date, when using WristTrack to track what you wear you would then need to look yourself at the stats and charts generated, but with the latest version, once a month your stats will come to you!
@@ -38,6 +38,7 @@ I've also update the search option - it still does a real-time search of the wat
 
 #### Bug fixes
 - Fixed a significant issue preventing data backups from completing on iOS26
+- The v1.18.2 patch fixed some _awful_ navigation bugs, which led to silent crashes and users being unable to close alert dialogs!
 
 
 <br>
