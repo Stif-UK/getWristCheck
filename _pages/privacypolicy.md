@@ -4,76 +4,86 @@ title: Privacy Policy
 include_in_header: false
 ---
 
-**Last updated**  
-July 15th 2024
+# WristTrack Privacy Policy
 
-## WristTrack Privacy Policy v1.2.1
+**Last Updated:** October 2026  
+**Effective Version:** 2.0.0
+
+WristTrack ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how information is collected, used, and protected when you use the WristTrack mobile application (the "Service").
+
 ---
-**Privacy Policy**
 
-Grant Hutchison built the WristTrack app as an Ad Supported app. This SERVICE is provided by Grant Hutchison at no cost and is intended for use as is.
+### 1. Core Principle: Local-First and Optional Cloud Sync
 
-This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
+We believe your watch collection data belongs to you. WristTrack is built around an **offline-first, local-storage architecture**:
 
-If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+* **Local-Only by Default:** You are not required to create an account or sign in to use WristTrack. If you choose not to log in, all collection details, wear logs, accuracy records, and watch photos remain **strictly stored locally on your device**. We do not have access to this data.
+* **Optional Cloud Backup & Sync:** If you choose to enable cloud sync and sign in, your data will be securely backed up to our cloud infrastructure to allow restoration and synchronization across your devices. **Enabling cloud sync is entirely optional.**
 
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at WristTrack unless otherwise defined in this Privacy Policy.
+---
 
-**Information Collection and Use**
+### 2. Information We Collect and Process
 
-For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
+#### A. When Using Local Mode (Not Logged In)
+* **Watch Data & Images:** Watch specifications, photos, wear logs, and accuracy calculations are stored locally on your device storage (via local databases and device file system) and are never uploaded to our servers.
+* **Diagnostics & Analytics:** Standard app diagnostic and analytics data (e.g., crash logs, performance metrics) may be processed via third-party SDKs to help us identify and fix bugs (see Section 5).
 
-The app does use third-party services that may collect information used to identify you.
+#### B. When Cloud Backup & Sync Is Enabled (Logged In)
+If you opt in to create an account and enable cloud backup:
+* **Account Information:** An authentication identifier (such as your email address or third-party auth provider ID) used solely for authentication and securing access to your data.
+* **Collection Data & Images:** Your watch catalog entries, wear logs, timing logs, and uploaded watch photos are transmitted and stored securely in our cloud backend (powered by Supabase).
+* **Data Security in Transit and at Rest:** All data and watch images synced to our backend are encrypted in transit (via HTTPS/TLS) and encrypted at rest.
 
-Link to the privacy policy of third-party service providers used by the app
+---
 
-*   [Google Play Services](https://www.google.com/policies/privacy/)
-*   [AdMob](https://support.google.com/admob/answer/6128543?hl=en)
-*   [Google Analytics for Firebase](https://firebase.google.com/support/privacy)
-*   [Firebase Crashlytics](https://firebase.google.com/support/privacy/)
-*   [RevenueCat](https://www.revenuecat.com/privacy)
+### 3. How We Use Your Data
 
-**Log Data**
+We use the data we collect or store solely to provide and improve the Service:
+1. **To Provide the Service:** Storing and restoring your collection, syncing your data across devices, and calculating user-specific wear and accuracy statistics.
+2. **Aggregated Community Insights:** We may analyze **anonymised, aggregated data** across users who have cloud sync enabled (for example, identifying the most popular case sizes, most logged watch brands, or most worn watches across the wider community). These insights are strictly aggregated and anonymized—they **cannot** be linked back to individual users or accounts.
+3. **App Reliability:** Analyzing crash reports and errors to resolve bugs and optimize performance.
 
-I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+---
 
-**Cookies**
+### 4. No Sale of User Data
 
-Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+**We do not sell, rent, monetize, or trade your personal data, watch logs, or photos to third parties or data brokers.** Your data is used exclusively to deliver the functionality of WristTrack and the optional community insights described above.
 
-This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+---
 
-**Service Providers**
+### 5. Third-Party Service Providers
 
-I may employ third-party companies and individuals due to the following reasons:
+We use reputable third-party service providers to facilitate and deliver the app’s features. These providers process data only on our behalf and under strict confidentiality and security standards:
 
-*   To facilitate our Service;
-*   To provide the Service on our behalf;
-*   To perform Service-related services; or
-*   To assist us in analyzing how our Service is used.
+* **Supabase:** Cloud database and storage provider used for optional authentication, data synchronization, and image backups. (View [Supabase Privacy Policy](https://supabase.com/privacy)).
+* **Google Play Services / Firebase (Crashlytics & Analytics):** Used to detect crashes, monitor app performance, and analyze generalized user flows to improve app stability. (View [Google Privacy Policy](https://policies.google.com/privacy)).
+* **RevenueCat:** Used to manage in-app subscriptions and pro features securely without accessing your payment credentials. (View [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/)).
+* **AdMob (if applicable):** Used to serve ads in the free version of the app. (View [Google AdMob Policy](https://policies.google.com/technologies/ads)).
 
-I want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+---
 
-**Security**
+### 6. Data Retention and Deletion
 
-I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+* **Local Data:** You can delete your local data at any time by clearing the app’s data or uninstalling the app from your device.
+* **Cloud Data & Account Deletion:** If you have enabled cloud sync, you have full control over your cloud data. You can request or perform account deletion directly within the app settings or by contacting us. Upon deletion, your account credentials, cloud-stored watch entries, and uploaded images will be permanently purged from our active Supabase database and storage buckets.
 
-**Links to Other Sites**
+---
 
-This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+### 7. Children’s Privacy
 
-**Children’s Privacy**
+Our Service is not directed to individuals under the age of 13 (or under 16 where required by local law). We do not knowingly collect personal data from children. If you become aware that a child has provided us with personal information, please contact us so we can take immediate steps to remove it.
 
-These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13 years of age. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do the necessary actions.
+---
 
-**Changes to This Privacy Policy**
+### 8. Changes to This Privacy Policy
 
-I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
+We may update this Privacy Policy from time to time as new features are added or regulations evolve. Any updates will be posted on this page with a revised "Last Updated" date. We encourage you to review this policy periodically.
 
-This policy is effective as of 2024-07-15
+---
 
-**Contact Us**
+### 9. Contact Us
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at feedback@wristtrack.app.
+If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:
 
-This privacy policy page was created at [privacypolicytemplate.net](https://privacypolicytemplate.net) and modified/generated by [App Privacy Policy Generator](https://app-privacy-policy-generator.nisrulz.com/).
+* **Email:** support@wristtrack.app
+* **Website:** [https://www.wristtrack.app](https://www.wristtrack.app)
