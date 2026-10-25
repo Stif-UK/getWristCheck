@@ -6,11 +6,12 @@ include_in_header: false
 
 # WristTrack Account & Data Deletion
 
-At WristTrack, we respect your data and give you complete control over your account.
+At WristTrack, we respect your data and give you complete control over your account. The app is local first, therefore unless you actively log into the app your account remains on your device. If you do decide to create an account and log in however, you can delete your account and cloud data at any time by following the process below.
+(Note: This applies to app versions higher than WristTrack 2.0)
 
 ### How to Delete Your Account In-App
 1. Open the WristTrack app on your device.
-2. Go to **Settings** > **Account**.
+2. Go to **Settings** > **Account & Cloud Sync**.
 3. Tap **Delete Account** at the bottom of the screen.
 4. Confirm deletion. Your cloud account, authentication credentials, collection data, and synced photos will be deleted immediately and permanently.
 
