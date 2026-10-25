@@ -1,3 +1,9 @@
+---
+layout: page
+title: Delete Account
+include_in_header: false
+---
+
 # WristTrack Account & Data Deletion
 
 At WristTrack, we respect your data and give you complete control over your account.
