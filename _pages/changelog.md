@@ -73,7 +73,7 @@ As always I hope you find the updates useful, and please feel free to reach out 
 
  <br>
 
- # **Version 1.19.7**
+# **Version 1.19.7**
 This was a small point release adding some small improvements, bug fixes and refinements.
 
 
