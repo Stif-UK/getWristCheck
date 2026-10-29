@@ -12,67 +12,43 @@ Here you can view a change log and version history for **WristTrack** - I try to
 <br>
 
 ### `Latest`
-# **Version 1.19.1**
-The slow march of progress continues! Whilst I always have a massive list of little changes to add to WristTrack, it's the overarching _'big picture'_ that's driving me forward at the moment - I have some key changes that I'd like to make (hopefully before the end of 2026, but don't quote me on that...) but some of these likely additional ongoing costs that I can't ignore, so in preparation I'm looking to hopefully increase the revenue coming in from WristTrack, or at least make it a bit more consistent.
+# **Version 1.20.0**
+The jump to v1.20 acts as a stepping stone to the next phase of WristTrack development (if you're reading this, we're probably getting quite close to launch, as I forgot to post this when v1.20 actually landed!).
+I've held off making database changes for a few months, but now that I have a clear plan for _the future_ this release goes ahead and makes some long requested updates.
 
-This release includes some small steps towards that aim.
+These include the ability to track a primary and secondary colour for your watches (along with charts to show the distribution in your collection, and filters on the wear charts), a new 'Value' field where you can (manually!) track the value of a watch (with consolidated info in the collection stats) and 'Year of Manufacture' for those that love to collect vintage pieces. The associated chart and wear chart filters for the last one can also display your collection/wear stats by either the exact year or by decade.
 
-Firstly, I've added a link (in the more menu) to the new [_WristTrack Merch Store_](https://wristtrack.teemill.com/) - I have no idea if this will interest _anyone_, but I love a good T-Shirt and I hope you do too! Initially its quite a small selection of items, but if there's interest (and income...) I can look to expand it further (I already have some more design ideas, and items I'd love to add...).
+Now that there is a huge amount of data that you can track about your watches, it's easy to get into a position where you have a stat you care about that hasn't been entered or recorded for all watches. To support with this I've also added a 'Data Completeness' view (find it within 'App Data' in the sidebar) that shows each potential data point and how many watches have it captured, with the ability to drill down into a detailed list showing the status for each watch - hopefully this will make finding and filling in that missing data easy!
 
-Secondly, I've added some small 'nudges' that will occasionally appear at the top of the main page, similar to the monthly _Wrist Recap_ nudge.
+For Pro users I've added further enhancements to the Moonphase calculator, to now also show the dates of the next four quarter moons.
 
-- For those using the free, ad-supported version of the app a pop-up encouraging them to upgrade to _WristTrack Pro_ will pop up every 90 days or so.
-- For _WristTrack Pro_ users, they'll see a pop up once a year, asking if they'd consider a follow on donation.
+Finally - partly driven by the previous version highlighting some issues when iOS27 released (I got lots of emails when Apple dropped that, as the Time Setting feature started freezing for users!) - I've added the ability to remotely trigger an in app banner to users. Writing that down I can't help but think it sounds sinister, but in reality it's quite simple - the small banner that pops up when you have a new monthly Wrist Recap dashboard available can now be remotely triggered via some server-side setup, to give unobtrusive messages (such as _"Apple have broken the app with iOS27, but I'm working on a fix!"_ ), enabling me to keep users updated with key info.
 
-Hopefully these are infrequent enough that they're not annoying (I'm open to feedback!), but may generate a little more revenue without changing the payment model to a subscription for new users (rest assured, I have no plans to do that!)
-
-There are a few other additions to the new version too.
-
-The search button has returned to the main page! I'm sure I've talked in the past about adding it to the main page as a primary navigation choice, but in the last release I moved it into the updated watchbox menu instead. Well I've seen the error of my ways and it's now returned to the main header.
-I've also further improved Search, building on the changes in the last update. For Pro users you can now choose to search by lug width if you want to quickly find all the watches that might fit your favourite strap (and if you toggle this on, the watch cards in the search results show the lug width value). In addition, everyone can filter the results by watch status. By default search now only returns 'In Collection' and 'On Loan' watches, but all other statuses can be toggled on or off via the menu.
-
-Wrist Recap also sees some further updates, and now as well as monthly or annual reports you can generate based on all of the the same choices as the wear charts (last 30, 90, 365 days, since last purchase, between two dates etc)
-
-I've also further refined the app UI - every time I do this I'm hopefully moving a little further away from the 'made in my garden shed' look, to something a little more modern. This time I've removed the block coloured headers so that the page colour expands edge to edge. Additionally, the bottom navigation bar is no longer a slab at the bottom, but now appears as a tile that floats above the page. These changes are subtle, but I think they make for a more immersive UI.
-
-Next, I've completely re-written the moon phase calculator _(available to Pro users)_ to allow me to display the name of the current moon phase, as well as letting me swap out the previous eclipsing yellow circle for a detailed image of the moon _(I think this looks super cool, especially if you use the app in dark mode!)_.
-In the same part of the app I've also added a GMT setting option. To keep things simple this just asks for a time offset (so you still need to look that up externally... for now) and it then displays a second time synced clock at the given time.
-
-I did stress about including fractional times (India for example has a 30 minute deviation in some locations), but I figured most people will use this to set a mechanical watch, which can't account for that anyway, so I kept things simple!
-
-Finally, I've added a new 'Wear Frequency' metric (thanks to my friend Sven for the suggestion!) - this takes the number of wears since the first tracked wear for a watch and represents it as a percentage of the days since that first data point. This just gives one simple number, but in practice it gives a very interesting metric for each watch, giving a quick at a glance view of the ones that hold onto your wrist more.
-
-Oh, and I've added Italian to the list of supported languages! As before, if you'd like to see other languages supported drop me an email - happy to add them as long as you can help with testing.
-
+As always I hope you find the updates useful, and please feel free to reach out with any thoughts or suggestions!
 
 
 #### What's New
-- New [_WristTrack Merch Store_](https://wristtrack.teemill.com/)
-- Wrist Recap time period updates - multiple options added to generate the report you want to see
-- Search updates - you can now search by the watches lug width (pro users) and filter results by selected watch statuses
-- Nudges (small banners) to drive app support
-- Wear Frequency metric added to watch records
-- GMT time setting - view a second time zone (WristTrack Pro only)
-- Italian Translation
+- New data fields, with associated charts and filters (Primary & Secondary colour, watch value, year of manufacture and [Pro only] power reserve)
+- Data completeness view added to help you plug data gaps
+- Server driven banner notifications added to keep you updated
 
 #### Improvements
-- UI improvements to the page headers and bottom navigation bars
-- Improved Moon Phase UI (WristTrack Pro only)
-- Database structural improvements to make chart generation more efficient
-- Updates to validation to allow continental decimals to be used in data fields
-- Swapped the order of the Add / Remove wear buttons on the calendar view
-- Removed the hard coded privacy policy from the app and link out to the website instead to improve maintainability
+- Database updated to the latest library version with long term support
+- App startup sequence further reviewed for better offline support
+- New case material option 'white gold'
+- New date complication options 'Pointer day-date' and 'Subdial day-date'
 
 #### Bug fixes
-- (Pro) 2nd daily reminder showed the time selected for the first reminder
-- Button text on the add wear button was the wrong colour on the calendar screens
-- Fixed a bug that could cause crashes if the user opened and closed the time setting page quickly
+- Fixed memory leak on Time Setting screen causing crashes on iOS27 devices
+- Fixed issue with date handling when using the app in languages other than English
 
 
 <br>
 
 ### `Previous versions`
 
+ - [v1.19.7](#Version 1.19.7)
+ - [v1.19.5](#Version 1.19.5)
  - [v1.18.2](#Version 1.18.2)
  - [v1.17.1](#Version 1.17.1)
  - [v1.16.1](#Version 1.16.1)
@@ -96,6 +72,80 @@ Oh, and I've added Italian to the list of supported languages! As before, if you
  - [v1.0](#Version 1.0)
 
  <br>
+
+ # **Version 1.19.7**
+This was a small point release adding some small improvements, bug fixes and refinements.
+
+
+ #### What's New
+ - Additional categories added for selection and filtering ('General', 'Digital', 'Casual', 'Smart Watch')
+ - Chart sizes in Wrist Recap now behave better for very large collections
+ - Fixed some pages where the floating navigation bar would overlap images or notifications
+ - Extra whitespace removed from the Watch views
+ - [Pro] GMT offset updated to +16 hours
+ - App startup sequence reviewed to improve stability and ensure full offline support
+
+ <br>
+
+ # **Version 1.19.5**
+ The slow march of progress continues! Whilst I always have a massive list of little changes to add to WristTrack, it's the overarching _'big picture'_ that's driving me forward at the moment - I have some key changes that I'd like to make (hopefully before the end of 2026, but don't quote me on that...) but some of these likely additional ongoing costs that I can't ignore, so in preparation I'm looking to hopefully increase the revenue coming in from WristTrack, or at least make it a bit more consistent.
+
+ This release includes some small steps towards that aim.
+
+ Firstly, I've added a link (in the more menu) to the new [_WristTrack Merch Store_](https://wristtrack.teemill.com/) - I have no idea if this will interest _anyone_, but I love a good T-Shirt and I hope you do too! Initially its quite a small selection of items, but if there's interest (and income...) I can look to expand it further (I already have some more design ideas, and items I'd love to add...).
+
+ Secondly, I've added some small 'nudges' that will occasionally appear at the top of the main page, similar to the monthly _Wrist Recap_ nudge.
+
+ - For those using the free, ad-supported version of the app a pop-up encouraging them to upgrade to _WristTrack Pro_ will pop up every 90 days or so.
+ - For _WristTrack Pro_ users, they'll see a pop up once a year, asking if they'd consider a follow on donation.
+
+ Hopefully these are infrequent enough that they're not annoying (I'm open to feedback!), but may generate a little more revenue without changing the payment model to a subscription for new users (rest assured, I have no plans to do that!)
+
+ There are a few other additions to the new version too.
+
+ The search button has returned to the main page! I'm sure I've talked in the past about adding it to the main page as a primary navigation choice, but in the last release I moved it into the updated watchbox menu instead. Well I've seen the error of my ways and it's now returned to the main header.
+ I've also further improved Search, building on the changes in the last update. For Pro users you can now choose to search by lug width if you want to quickly find all the watches that might fit your favourite strap (and if you toggle this on, the watch cards in the search results show the lug width value). In addition, everyone can filter the results by watch status. By default search now only returns 'In Collection' and 'On Loan' watches, but all other statuses can be toggled on or off via the menu.
+
+ Wrist Recap also sees some further updates, and now as well as monthly or annual reports you can generate based on all of the the same choices as the wear charts (last 30, 90, 365 days, since last purchase, between two dates etc)
+
+ I've also further refined the app UI - every time I do this I'm hopefully moving a little further away from the 'made in my garden shed' look, to something a little more modern. This time I've removed the block coloured headers so that the page colour expands edge to edge. Additionally, the bottom navigation bar is no longer a slab at the bottom, but now appears as a tile that floats above the page. These changes are subtle, but I think they make for a more immersive UI.
+
+ Next, I've completely re-written the moon phase calculator _(available to Pro users)_ to allow me to display the name of the current moon phase, as well as letting me swap out the previous eclipsing yellow circle for a detailed image of the moon _(I think this looks super cool, especially if you use the app in dark mode!)_.
+ In the same part of the app I've also added a GMT setting option. To keep things simple this just asks for a time offset (so you still need to look that up externally... for now) and it then displays a second time synced clock at the given time.
+
+ I did stress about including fractional times (India for example has a 30 minute deviation in some locations), but I figured most people will use this to set a mechanical watch, which can't account for that anyway, so I kept things simple!
+
+ Finally, I've added a new 'Wear Frequency' metric (thanks to my friend Sven for the suggestion!) - this takes the number of wears since the first tracked wear for a watch and represents it as a percentage of the days since that first data point. This just gives one simple number, but in practice it gives a very interesting metric for each watch, giving a quick at a glance view of the ones that hold onto your wrist more.
+
+ Oh, and I've added Italian to the list of supported languages! As before, if you'd like to see other languages supported drop me an email - happy to add them as long as you can help with testing.
+
+
+
+ #### What's New
+ - New [_WristTrack Merch Store_](https://wristtrack.teemill.com/)
+ - Wrist Recap time period updates - multiple options added to generate the report you want to see
+ - Search updates - you can now search by the watches lug width (pro users) and filter results by selected watch statuses
+ - Nudges (small banners) to drive app support
+ - Wear Frequency metric added to watch records
+ - GMT time setting - view a second time zone (WristTrack Pro only)
+ - Italian Translation
+
+ #### Improvements
+ - UI improvements to the page headers and bottom navigation bars
+ - Improved Moon Phase UI (WristTrack Pro only)
+ - Database structural improvements to make chart generation more efficient
+ - Updates to validation to allow continental decimals to be used in data fields
+ - Swapped the order of the Add / Remove wear buttons on the calendar view
+ - Removed the hard coded privacy policy from the app and link out to the website instead to improve maintainability
+
+ #### Bug fixes
+ - (Pro) 2nd daily reminder showed the time selected for the first reminder
+ - Button text on the add wear button was the wrong colour on the calendar screens
+ - Fixed a bug that could cause crashes if the user opened and closed the time setting page quickly
+
+
+ <br>
+
 
  # **Version 1.18.2**<a name="Version 1.18.2"></a>
  In early 2025 I added Wrist Recap to WristTrack - initially as a beta of the feature, the idea was to allow a user to see an annual summary of their collection, with a bit more insight into what they had bought, sold and worn throughout the year.
