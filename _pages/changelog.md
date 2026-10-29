@@ -77,7 +77,7 @@ As always I hope you find the updates useful, and please feel free to reach out 
 This was a small point release adding some small improvements, bug fixes and refinements.
 
 
- #### What's New
+#### What's New
  - Additional categories added for selection and filtering ('General', 'Digital', 'Casual', 'Smart Watch')
  - Chart sizes in Wrist Recap now behave better for very large collections
  - Fixed some pages where the floating navigation bar would overlap images or notifications
@@ -87,7 +87,7 @@ This was a small point release adding some small improvements, bug fixes and ref
 
  <br>
 
- # **Version 1.19.5**
+# **Version 1.19.5**
  The slow march of progress continues! Whilst I always have a massive list of little changes to add to WristTrack, it's the overarching _'big picture'_ that's driving me forward at the moment - I have some key changes that I'd like to make (hopefully before the end of 2026, but don't quote me on that...) but some of these likely additional ongoing costs that I can't ignore, so in preparation I'm looking to hopefully increase the revenue coming in from WristTrack, or at least make it a bit more consistent.
 
  This release includes some small steps towards that aim.
@@ -121,7 +121,7 @@ This was a small point release adding some small improvements, bug fixes and ref
 
 
 
- #### What's New
+#### What's New
  - New [_WristTrack Merch Store_](https://wristtrack.teemill.com/)
  - Wrist Recap time period updates - multiple options added to generate the report you want to see
  - Search updates - you can now search by the watches lug width (pro users) and filter results by selected watch statuses
@@ -130,7 +130,7 @@ This was a small point release adding some small improvements, bug fixes and ref
  - GMT time setting - view a second time zone (WristTrack Pro only)
  - Italian Translation
 
- #### Improvements
+#### Improvements
  - UI improvements to the page headers and bottom navigation bars
  - Improved Moon Phase UI (WristTrack Pro only)
  - Database structural improvements to make chart generation more efficient
@@ -138,7 +138,7 @@ This was a small point release adding some small improvements, bug fixes and ref
  - Swapped the order of the Add / Remove wear buttons on the calendar view
  - Removed the hard coded privacy policy from the app and link out to the website instead to improve maintainability
 
- #### Bug fixes
+#### Bug fixes
  - (Pro) 2nd daily reminder showed the time selected for the first reminder
  - Button text on the add wear button was the wrong colour on the calendar screens
  - Fixed a bug that could cause crashes if the user opened and closed the time setting page quickly
@@ -147,7 +147,7 @@ This was a small point release adding some small improvements, bug fixes and ref
  <br>
 
 
- # **Version 1.18.2**<a name="Version 1.18.2"></a>
+# **Version 1.18.2**<a name="Version 1.18.2"></a>
  In early 2025 I added Wrist Recap to WristTrack - initially as a beta of the feature, the idea was to allow a user to see an annual summary of their collection, with a bit more insight into what they had bought, sold and worn throughout the year.
  Whilst the feature was fun, it never felt _finished_ - so in v1.18 I've revisited and completely overhauled it.
  To date, when using WristTrack to track what you wear you would then need to look yourself at the stats and charts generated, but with the latest version, once a month your stats will come to you!
@@ -161,24 +161,24 @@ This was a small point release adding some small improvements, bug fixes and ref
  I've also update the search option - it still does a real-time search of the watch database (refreshing as every letter is entered...) but now returns a more detailed card view of the results, including watch images where possible. It also now includes the ability to search the notes field of the watch, in addition to (or instead of) the watch name.
 
 
- #### What's New
+#### What's New
  - Huge update to Wrist Recap - now dynamically generates summaries and insights for months or years
  - Monthly Wrist Recap prompt highlighting when new reports are available
  - New image only Gallery view option available for the main Watchbox
  - Updates to Search - more detailed cards (with images) returned, and the ability to search notes added
 
- #### Improvements
+#### Improvements
  - Updated the underlying build framework to the latest SDK version.
  - Multiple internal libraries updated.
 
- #### Bug fixes
+#### Bug fixes
  - Fixed a significant issue preventing data backups from completing on iOS26
  - The v1.18.2 patch fixed some _awful_ navigation bugs, which led to silent crashes and users being unable to close alert dialogs!
 
 
  <br>
 
- # **Version 1.17.1**<a name="Version 1.17.1"></a>
+# **Version 1.17.1**<a name="Version 1.17.1"></a>
  A fairly major update this time, as I've spent the past few _months_ working on internationalising the app - which involved stripping every piece of text out into a single file, generating translation files in multiple languages and implementing the under the hood framework to then allow instant switching between chosen languages!
  When I started this seemed like it would be fairly straightforward... oh how naive I was! Different languages use different groupings for numbers and plurals - the framework handled these, but it meant a bit more thought had to go into how some of the app was laid out and held together (so custom code I'd written in some places was binned in favour of the language framework alternatives).
  In some languages phrases were significantly longer or shorter, leading to text overflows and other layout challenges, so I reworked some of the UI in the app to ensure text fit as expected - in some places, like the watchbox this led to a significant UI update. In other areas I just needed to be smarted about how text could dynamically scale.
@@ -192,7 +192,7 @@ This was a small point release adding some small improvements, bug fixes and ref
  This has probably been one of the longest gaps I've gone between releasing updates, thanks to everyone who has bore with me whilst I put this one together!
 
 
- #### What's New
+#### What's New
  - Ability to select the primary app language (English, French, German, Russian, Czech)
  - UI improvements to the Watch Box List view - watch details are now on larger cards, with improved image size
  - UI improvements to the Watch Box Grid view - borders removed and larger images are presented with watch information below.
@@ -202,16 +202,16 @@ This was a small point release adding some small improvements, bug fixes and ref
  - Currency list is now searchable to make selection easier
 
 
- #### Improvements
+#### Improvements
  - Pro data sections are expanded by default, but can be shrunk as required, rather than the other way around.
  - App anonymous ID has been added to the Settings page to make it easy to copy - this aids payment troubleshooting.
  - When wearing a watch, snackbars (small text pop-ups) have been moved to the top, rather than bottom of the screen.
 
- #### Bug fixes
+#### Bug fixes
  - Fixed issue where some button text overflowed on some screen sizes.
  - Fixed an issue where Wrist Recap always calculated wears per day using the full year, even if only partial tracking data was available.
 
- # **Version 1.16.1**<a name="Version 1.16.1"></a>
+# **Version 1.16.1**<a name="Version 1.16.1"></a>
  Ok, despite there being over a month between v1.16 and this 1.16.1 _point release,_ I'm going to group the update together here because it looks like I forgot to write a proper one for v1.16!
 
  The biggest change here is the addition of accuracy tracking - by creating different checkpoints, where the time on your watch is tracked along with the accurate atomic time, the app can compare the change in these times to calculate the rate of drift (I'll implement some charts in future releases!)
@@ -221,20 +221,20 @@ This was a small point release adding some small improvements, bug fixes and ref
  Finally I've made a small, but hopefully useful, update to the watch images - any image can now be set as the 'primary' image for a watch. The primary image will be shown in the watchbox view, as well as in the watch gallery. Useful if you often switch between straps and want to be able to pick a different main image depending on the current strap pairing.
 
 
- #### What's New
+#### What's New
  - Accuracy Tracking: take checkpoints and calculate the time deviation in seconds per day, month or year
  - Add multiple dates to the watch Calendar
  - Any watch image can now be set as the _primary_ image for the watch, which will show in all other views (e.g. gallery or watchbox)
 
 
- #### Improvements
+#### Improvements
  - Watch charts updated with _'last 12 months'_ and _'between two dates'_ filters
  - Removed the unnecessary leading zero on the time setting view when time is set to AM/PM
  - Malaysian Ringgit added to currency listen
  - Spring drive added to movements
  - PVD Steel and Tungsten added to materials
 
- #### Bug fixes
+#### Bug fixes
  - Fixed issue where clock preferences weren't saving on the time setting tab
  - Fixed bug where some calendar views didn't respect the user selected first day of the week
  - On Android the app icon is now adaptive, so should show a 'full' icon on all devices
